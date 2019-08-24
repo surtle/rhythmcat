@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb21f8977573e3c4dbf025089e005ec5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - a_texture: {fileID: 21300000, guid: 86f4bceb25d1ac0498f2c646b20060a5, type: 3}
+  - s_texture: {fileID: 21300000, guid: 2d7641ec9b97adc4cacd4a9a3d6641bc, type: 3}
+  - k_texture: {fileID: 21300000, guid: 42cd3328ef6ed9341a275bb4efacb296, type: 3}
+  - l_texture: {fileID: 21300000, guid: 174c9fbbd098a6d48b4e57a6ebf405bf, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

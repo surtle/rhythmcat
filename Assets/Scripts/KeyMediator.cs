@@ -8,6 +8,8 @@ public class KeyMediator : MonoBehaviour
 
     [SerializeField] KeyGenerator keyGen;
     [SerializeField] TMP_Text score;
+    [SerializeField] ResultView rv;
+    [SerializeField] ScoreController scoreController;
 
     private Vector2 keyCatcherPos;
     int scoreValue;
@@ -68,6 +70,8 @@ public class KeyMediator : MonoBehaviour
 
             // update score
             score.text = scoreValue.ToString().PadLeft(4, '0');
+            scoreController.setScoreValue(scoreValue);
+            
         } catch
         {
             // do ntohing? 
@@ -79,10 +83,12 @@ public class KeyMediator : MonoBehaviour
         Debug.Log(Mathf.Abs(distance1 - distance2));
         if(Mathf.Abs(distance1 - distance2) <= perfectRange)
         {
+            rv.showPerfectResult();
             return 100;
         }
         else if(Mathf.Abs(distance1 - distance2) <= okRange)
         {
+            rv.showOKResult();
             return 50;
         }
         else

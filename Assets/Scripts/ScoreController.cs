@@ -8,17 +8,28 @@ public class ScoreController : MonoBehaviour
 {
 
     private TMP_Text scoreText;
+    static int scoreValue;
 
     // Start is called before the first frame update
     void Start()
     {
-        scoreText = GetComponent<TMP_Text>();
-        Debug.Log(scoreText.text);
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void setScoreValue(int score)
+    {
+        scoreValue = score;
+        Debug.Log("scoreController: " + score.ToString());
+    }
+
+    public int getScoreValue()
+    {
+        return scoreValue;
     }
 }
